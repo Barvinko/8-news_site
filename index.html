@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+
+        <title>Sample Document</title>
+    
+        <link rel="shortcut icon" href="./assets/images/favicon.png">
+        <link rel="stylesheet" href="./assets/css/bootstrap.css">
+        <link rel="stylesheet" href="./assets/css/font-awesome.css">
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script defer src="./assets/js/main.js"></script>
+    </head>
+    <body>
+       
+        <div class="container min-vh-100 d-flex flex-column">
+            
+            <header class="d-flex align-items-center justify-content-between"> 
+                <h1 class='my-4 d-flex align-items-center'>
+                    <i class="far fa-newspaper"></i>
+                    <span>&nbsp;MyNews</span>
+                </h1>
+                <div class="input-group mb-3">
+                    <input type="text" id ="input" class="form-control"
+                    placeholder="Enter query" 
+                    aria-label="Enter query" 
+                    aria-describedby="button-addon2">
+                    <button id='buttonInput' class="btn btn-outline-secondary" type="button" id="button-addon2">Button</button>
+                </div>
+            </header>
+
+            <main class='flex-grow-1'>   
+                <section id='news-list-place' class='my-4'>   
+                    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">             
+                        <h1>News List</h1>
+                        <ul class="list-group">
+                            <i class="d-block mx-auto fa-3x fa-spin fas fa-spinner"></i>
+                        </ul>
+                    </div>
+                </section>
+
+                <section id='one-news-place' class='d-none' >
+                    <div class='my-2'>
+                        <button id='back-button' class='btn-lg btn btn-secondary'>
+                            <i class="fas fa-arrow-left"></i>
+                            Back To News List
+                        </button>
+                    </div>
+
+                    <article class='py-3'>
+
+                    </article>
+                </section>
+            </main>
+
+            <footer>
+                <h5 class='text-center my-4'>
+                    Copyright &copy; 2021
+                </h5>
+            </footer>
+        </div>
+    </body>
+</html>
